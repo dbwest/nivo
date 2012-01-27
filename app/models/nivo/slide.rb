@@ -32,6 +32,11 @@ module Nivo
     def self.rotate
       where("active = ?", true).order("position")
     end
+    
+    def self.rotate_for_page(page_showing)
+      active_sliders = where("active = ?", true).order("position")
+      sliders_for_this_page = active_sliders.find_all {|slide| slide.show.include?(page_showing)}
+    end
 
     ##
     # Find for admin index
