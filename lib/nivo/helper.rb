@@ -10,5 +10,10 @@ module Nivo
         render "nivo/slideshow", :slides => @slides
       end
     end
+    
+    def show_slider_for_page(page_showing)
+      @slides = Nivo::Slide.rotate_for_page(page_showing)
+      render "nivo/slideshow", :slides => @slides
+    end
   end
 end
