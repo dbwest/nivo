@@ -42,11 +42,7 @@ module Nivo
     # Find for admin index
     #
     def self.paginate_all(search)
-      if defined?(Dust::Application)
-        with_permissions_to(:manage).search(search).order("position")
-      else
-        search(search).order("position")
-      end
+      search(search).order("position")
     end
 
     ##
