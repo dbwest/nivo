@@ -29,9 +29,9 @@ eos
   # specify any dependencies here; for example:
   #
   s.add_development_dependency "shoulda", ">= 0"
-  s.add_development_dependency "bundler", "~> 1.0.0"
+  s.add_development_dependency "bundler"
   s.add_development_dependency "rcov", ">= 0"
   s.add_runtime_dependency "jquery-rails", "1.0.14"
   s.add_runtime_dependency "paperclip", "2.3.6"
-  s.add_runtime_dependency "haml", "3.1.3"
+  s.add_runtime_dependency "haml"
 end
