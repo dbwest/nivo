@@ -1,4 +1,4 @@
-Rails.application.routes.draw do |map|
+Rails.application.routes.draw do
 
   mount_at = Nivo::Engine.config.mount_at
 
